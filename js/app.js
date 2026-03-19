@@ -198,3 +198,42 @@ onSnapshot(collection(db, "posts"), (snapshot)=>{
   });
 
 });
+/* =========================
+   🌌 WELCOME POPUP + TYPE EFFECT
+========================= */
+
+const welcomeText = "Welcome to Unsaid Universe — drop your thoughts, explore others, and connect anonymously across the world. 🌌";
+
+let typingIndex = 0;
+
+function typeEffect(){
+  const el = document.getElementById("typingText");
+
+  if(!el) return;
+
+  if(typingIndex < welcomeText.length){
+    el.innerHTML += welcomeText.charAt(typingIndex);
+    typingIndex++;
+    setTimeout(typeEffect, 30); // typing speed
+  }
+}
+
+/* SHOW EVERY VISIT */
+window.addEventListener("load", () => {
+  const popup = document.getElementById("welcomePopup");
+
+  if(popup){
+    popup.style.display = "flex";
+
+    // reset text every refresh
+    document.getElementById("typingText").innerHTML = "";
+    typingIndex = 0;
+
+    typeEffect();
+  }
+});
+
+/* CLOSE POPUP */
+window.closeWelcome = function(){
+  document.getElementById("welcomePopup").style.display = "none";
+};

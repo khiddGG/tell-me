@@ -4,16 +4,18 @@
   <title>Unsaid Universe</title>
 
   <link rel="stylesheet" href="css/style.css">
-   <!--discription-->
+
+  <!-- description -->
   <meta name="description" content="Unsaid Universe is a location-based social platform where users can anonymously share thoughts on a map and interact through comments in real-time.">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- LEAFLET -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
   <!-- TWEMOJI -->
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" type="image/svg+xml">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" type="image/svg+xml">
+
   <!-- CLUSTER -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"/>
@@ -38,6 +40,15 @@
     <textarea id="thought" placeholder="Write something..."></textarea>
     <button onclick="submitPost()">🚀 Post</button>
     <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<!-- 🌌 WELCOME POPUP (NEW) -->
+<div id="welcomePopup" class="welcome-popup">
+  <div class="welcome-box">
+    <h2>🌌 Welcome</h2>
+    <p id="typingText"></p>
+    <button onclick="closeWelcome()">Enter</button>
   </div>
 </div>
 
