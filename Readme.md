@@ -32,24 +32,26 @@ A location-based anonymous social platform where users can share their thoughts 
 
 ---
 
-## 🗂️ Project Structure
+## 📁 Project Structure
+
+```
 project/
 │
 ├── index.html
 ├── README.md
 │
 ├── css/
-│ └── style.css
+│   └── style.css
 │
 ├── js/
-│ └── app.js
+│   └── app.js
 │
 ├── include/
-│ ├── header.html
-│ └── footer.html
+│   ├── header.html
+│   └── footer.html
 │
 └── assets/
-
+```
 
 ---
 
